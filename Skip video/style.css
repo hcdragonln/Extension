@@ -1,0 +1,32 @@
+#custom-in-video {
+    pointer-events: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin: 12px 0;
+    position: absolute;
+    
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+#custom-in-video button,
+#custom-below-title button {
+    pointer-events: auto;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.skip-backward { background: #2196F3; color: white; }
+.skip-forward { background: #FFC107; color: black; }
+.skip-backward:hover, .skip-forward:hover {
+    filter: brightness(1.1);
+    transform: scale(1.05);
+}

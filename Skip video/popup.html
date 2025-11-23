@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Cài đặt nút YouTube</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      font-size: 16px;
+      min-width: 250px;
+    }
+    h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    label {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      margin-bottom: 12px;
+      gap: 10px;
+    }
+    input[type="checkbox"] {
+      transform: scale(1.5);
+    }
+    button {
+      margin-top: 15px;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    button:hover {
+      background-color: #388E3C;
+    }
+  </style>
+</head>
+<body>
+  <h3>Tuỳ chọn nút YouTube</h3>
+  <label><input type="checkbox" id="inVideo"> Hiển thị trong video</label>
+  <label><input type="checkbox" id="belowTitle"> Hiển thị dưới tiêu đề video</label>
+  <button id="save">Lưu cài đặt</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
